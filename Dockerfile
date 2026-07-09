@@ -1,5 +1,5 @@
 # Build: render the static site with Node (no npm dependencies).
-FROM node:22-alpine AS build
+FROM node:26-alpine AS build
 WORKDIR /app
 COPY package.json build.mjs ./
 COPY src ./src
