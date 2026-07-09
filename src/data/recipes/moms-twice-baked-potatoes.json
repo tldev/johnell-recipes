@@ -1,0 +1,41 @@
+{
+  "title": "Mom’s Twice-Baked Potatoes",
+  "attribution": "Mom",
+  "section": "mains",
+  "image": "twice-baked",
+  "tagline": "Jumbo bakers scooped out and remixed with sour cream, sharp cheddar, and scallions, then piled high and browned again.",
+  "ingredients": [
+    {
+      "heading": null,
+      "items": [
+        "6 jumbo baking potatoes",
+        "6 oz. sour cream",
+        "4–6 tablespoons butter (¾ stick)",
+        "6 oz. thinly shredded, sharp cheddar cheese",
+        "1 bunch scallions with tops — chopped",
+        "Salt & pepper to taste"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "text": "Preheat oven to 400 degrees. Scrub potatoes and dry with paper towels. Rub butter over the surface and generously salt all over."
+    },
+    {
+      "text": "Place potatoes evenly on a shallow cookie pan that has been covered in aluminum foil, and place in preheated oven. Cook about 1 hour or until a fork pierced into the largest potato inserts without any resistance. Remove pan from oven and let potatoes cool slightly; leave oven at 400 degrees while they cool."
+    },
+    {
+      "text": "When potatoes are cool enough to handle, slice a thin oval-shaped section off the top of each potato, leaving enough of an opening to allow for scooping out the insides with a spoon. Discard tops."
+    },
+    {
+      "text": "Scoop out the potato from each skin, being careful not to tear or break the skins, while getting as much potato out as you can (tricky!)."
+    },
+    {
+      "text": "Place all of the insides into a large mixing bowl and add the rest of the ingredients, mixing well. Test the flavor and texture of the stuffing as you mix… you may just want to add more sour cream, butter, cheese and/or salt — it’s a personal thing…"
+    },
+    {
+      "text": "Stuff the enhanced potato back into the skins, piling it high in the middle of each one. Place them back in the oven until tops are golden brown."
+    }
+  ],
+  "dedication": "This one’s for Michael P. — his favorite!"
+}

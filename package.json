@@ -1,0 +1,15 @@
+{
+  "name": "johnell-recipes",
+  "version": "1.0.0",
+  "description": "The Johnell family cookbook — Seasoned with a Mother's Love at Christmas (2007) — as a website.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test",
+    "serve": "node build.mjs && python3 -m http.server 8080 --directory dist"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

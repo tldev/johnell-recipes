@@ -1,0 +1,43 @@
+{
+  "title": "Mom’s Meatloaf",
+  "attribution": "Mom",
+  "section": "mains",
+  "image": "meatloaf",
+  "tagline": "Lean sirloin with Romano and Worcestershire, shaped like a bread loaf with a channel down the middle to hold more ketchup.",
+  "ingredients": [
+    {
+      "heading": null,
+      "items": [
+        "2½ lbs. lean ground sirloin (96% lean or leaner)",
+        "1 large sweet or Spanish onion — chopped",
+        "¼ cup seasoned breadcrumbs",
+        "2 eggs",
+        "¼ cup Worcestershire sauce",
+        "1 cup lightly-packed, freshly grated Pecorino Romano cheese",
+        "½ teaspoon Lawry’s seasoning salt",
+        "¼ teaspoon fresh ground pepper",
+        "¼ teaspoon garlic powder",
+        "1 cup Heinz ketchup"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "text": "Preheat oven to 350 degrees. In a large bowl combine all ingredients except for the ketchup."
+    },
+    {
+      "text": "Fold mixture into a 9½ × 5½ × 3 inch Teflon-coated loaf pan. Shape the top of the loaf like a loaf of bread, sloping the sides. Press an indentation down the center top of the loaf lengthwise, to capture more ketchup on top."
+    },
+    {
+      "text": "Squeeze a generous quantity of ketchup over the loaf, filling in the top and completely covering the meat (it may be more than 1 cup — I never measured!)."
+    },
+    {
+      "text": "Place in the center of the oven and bake for 1½ hours. Ketchup should be slightly brown and juices bubbling. Let stand for 10 minutes before slicing into thick slices. HINT: place a square of heavy aluminum foil on the rack below the loaf pan to catch spills."
+    },
+    {
+      "text": "Always serve with homemade mashed potatoes, 2 packages brown gravy mix prepared with a little red wine added to the gravy, green beans, and hot, crusty French baguettes to round out the meal!"
+    }
+  ],
+  "dedication": "This one’s for Natalie!",
+  "signoff": "Love, Mom XOXOX"
+}

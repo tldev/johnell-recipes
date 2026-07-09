@@ -1,0 +1,42 @@
+{
+  "title": "Snow Salad",
+  "attribution": "Grandmother Joan Temple",
+  "section": "thanksgiving",
+  "image": "snow-salad",
+  "tagline": "Cream cheese, fruit cocktail, pecans, and whipped cream set in a gelatin mold overnight — unmolded with a dip in hot water.",
+  "ingredients": [
+    {
+      "heading": null,
+      "items": [
+        "1 envelope unflavored gelatin",
+        "2 tablespoons lemon juice",
+        "1 3-oz. package cream cheese",
+        "¼ cup mayonnaise",
+        "1 large can fruit cocktail (3½ cups drained)",
+        "½ cup chopped pecans",
+        "½ cup sugar",
+        "1 cup heavy cream"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "text": "Soften gelatin in lemon juice over boiling water in a double boiler."
+    },
+    {
+      "text": "Soften cream cheese, blend in mayonnaise. Blend in gelatin."
+    },
+    {
+      "text": "Add fruit, mixing gently. Add nuts."
+    },
+    {
+      "text": "Whip cream until stiff. Gently fold sugar into whipped cream. Fold fruit mixture in with whipped cream."
+    },
+    {
+      "text": "Pour into mold. Chill overnight if possible."
+    },
+    {
+      "text": "Un-mold by dipping mold in a pan of hot water for a few seconds, invert on a platter and serve! (If desired, garnish with pineapple ring halves and Maraschino cherries.)"
+    }
+  ]
+}

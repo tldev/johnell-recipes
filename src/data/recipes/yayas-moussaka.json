@@ -1,0 +1,42 @@
+{
+  "title": "Yaya’s Moussaka",
+  "attribution": "Yaya",
+  "section": "mains",
+  "image": "moussaka",
+  "tagline": "Layers of potato — and a corner of eggplant — with simmered meat sauce, baked low and slow in one big pan.",
+  "intro": "Yaya makes moussaka in a large rectangular baking dish, using potato layers on ¾ of the pan and eggplant layers on ¼. As she would say, “This way, I keep everyone happy, right?”",
+  "ingredients": [
+    {
+      "heading": null,
+      "items": [
+        "4 potatoes, peeled and sliced about ½ inch thick",
+        "2 small eggplants (1 if large)",
+        "1 large or 2 medium sweet onions — finely chopped",
+        "2 lbs. lean chopped sirloin",
+        "2 15-oz. cans of tomato sauce",
+        "1 15-oz. can of water",
+        "Olive oil"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "text": "After peeling and slicing potatoes, place them in water to keep them from turning brown."
+    },
+    {
+      "text": "Meanwhile, if you are doing eggplant, wash and slice the eggplant crosswise in ¾ inch slices. Place on a cookie sheet and brush with olive oil on both sides. Place under broiler, browning on both sides until tan."
+    },
+    {
+      "text": "In a large saucepan, sauté onion in a little olive oil until limp. Add meat and brown thoroughly. Add tomato sauce and water and let simmer for about 15 minutes. Meanwhile, preheat the oven to 400 degrees."
+    },
+    {
+      "text": "In a large baking pan, layer potato and meat sauce in the pan, leaving potato on top. If eggplant is used, layer eggplant on the opposite side of the pan from the potato, alternating eggplant with meat sauce and ending up with eggplant on top."
+    },
+    {
+      "text": "Add a little more water to slightly cover the potato/eggplant on top. Bake moussaka on the lower rack of the oven at 400 degrees for 1 hour, or until potato is tender when pierced with a fork."
+    },
+    {
+      "text": "Let stand for 15 minutes before slicing and serving. Serve with kalamata olives and a Greek salad!"
+    }
+  ]
+}

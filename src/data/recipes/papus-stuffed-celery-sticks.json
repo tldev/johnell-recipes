@@ -1,0 +1,31 @@
+{
+  "title": "Papu’s Stuffed Celery Sticks",
+  "attribution": "Papu",
+  "section": "appetizers",
+  "image": "celery",
+  "tagline": "Crisp celery filled with blended Maytag Blue and cream cheese, with a little Hungarian paprika for color.",
+  "ingredients": [
+    {
+      "heading": null,
+      "items": [
+        "1 bunch of celery",
+        "8 oz. Maytag Blue cheese",
+        "3-oz. package of cream cheese"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "text": "Clean celery stalks thoroughly. Cut off leaves and tough white base of stalk. With a potato peeler, shave off some of the fibrous strings on the outside."
+    },
+    {
+      "text": "Cut each stalk in half or thirds crosswise, to make 3–4 inch pieces."
+    },
+    {
+      "text": "Blend the cheeses together well. With a spatula or knife, fill the celery pieces with cheese filling."
+    },
+    {
+      "text": "If desired, sprinkle a tiny bit of Hungarian paprika over the cheese to add a little color!"
+    }
+  ]
+}

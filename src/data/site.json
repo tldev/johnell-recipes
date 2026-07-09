@@ -1,0 +1,109 @@
+{
+  "title": "Johnell Family Recipes",
+  "tagline": "Seasoned with a Mother’s Love at Christmas",
+  "originalDate": "December 25, 2007",
+  "baseUrl": "https://recipes.tomjohnell.com",
+  "description": "The Johnell family cookbook — Yaya’s Greek classics, Mom and Dad’s dinner-table legends, and the full Thanksgiving spread — typed up with love in 2007 and kept warm ever since.",
+  "colophon": "From a book Mom made for us, Christmas 2007. Transcribed with love (and every XOXO kept intact).",
+  "sections": [
+    {
+      "id": "appetizers",
+      "title": "Appetizers",
+      "greek": "μεζέδες · mezethes",
+      "blurb": "The little dishes that started every holiday — folded, stuffed, and rolled by hand, usually with three generations crowded around the counter.",
+      "recipes": [
+        "yayas-yaplakia",
+        "yayas-tiropetes",
+        "yayas-spanakopetes",
+        "papus-stuffed-celery-sticks"
+      ],
+      "lost": [
+        {
+          "title": "Shrimp Fondue",
+          "note": "Listed on page 1.6 of the original table of contents, but the page itself never made it into our copy of the book. If you remember how it went, tell Tom."
+        }
+      ]
+    },
+    {
+      "id": "mains",
+      "title": "Main Courses",
+      "greek": "κυρίως πιάτα",
+      "blurb": "Sunday dinners and school-night favorites — half from Yaya’s Greece, half from Mom and Dad’s American kitchen, all of them served with warm bread.",
+      "recipes": [
+        "yayas-pastitsio",
+        "yayas-moussaka",
+        "moms-meatloaf",
+        "moms-stew",
+        "moms-chili-rellenos",
+        "dads-super-secret-bbq-ribs",
+        "dads-spaghetti",
+        "moms-twice-baked-potatoes",
+        "roast-leg-of-lamb"
+      ],
+      "lost": [
+        {
+          "title": "Yaya’s Stuffed Peppers",
+          "note": "Promised on page 2.3 of the original table of contents, but the page was lost somewhere between 2007 and now. The peppers live on in memory."
+        }
+      ]
+    },
+    {
+      "id": "thanksgiving",
+      "title": "Thanksgiving at the Johnells’",
+      "greek": "η μεγάλη γιορτή",
+      "blurb": "The whole production — giblet gravy simmering all morning, two stuffings because one was never enough, and Grandmother Joan Temple’s snow salad setting in the fridge.",
+      "menuPage": true,
+      "recipes": [
+        "dads-giblet-gravy",
+        "moms-bread-stuffing",
+        "homemade-cranberry-sauce",
+        "snow-salad",
+        "candied-sweet-potatoes",
+        "yayas-chestnut-stuffing",
+        "moms-creamed-onions"
+      ],
+      "lost": []
+    }
+  ],
+  "menu": {
+    "title": "Thanksgiving Dinner at The Johnell’s",
+    "note": "The menu as Mom printed it in the book — every year, the whole thing.",
+    "courses": [
+      {
+        "title": "Appetizers",
+        "items": [
+          { "name": "Yaplakia", "slug": "yayas-yaplakia" },
+          { "name": "Tiropetes", "slug": "yayas-tiropetes" },
+          { "name": "Spanakopetes", "slug": "yayas-spanakopetes" },
+          { "name": "Feta Cheese Squares" },
+          { "name": "Kalamata Olives" },
+          { "name": "Celery Sticks with Blue Cheese", "slug": "papus-stuffed-celery-sticks" }
+        ]
+      },
+      {
+        "title": "Main Course",
+        "items": [
+          { "name": "Roast Turkey with Giblet Gravy", "slug": "dads-giblet-gravy" },
+          { "name": "Fresh Cranberry Sauce", "slug": "homemade-cranberry-sauce" },
+          { "name": "Yaya’s Pastitsio", "slug": "yayas-pastitsio" },
+          { "name": "Savory Bread Stuffing", "slug": "moms-bread-stuffing" },
+          { "name": "Yaya’s Chestnut Stuffing", "slug": "yayas-chestnut-stuffing" },
+          { "name": "Mashed Potatoes" },
+          { "name": "Candied Yams", "slug": "candied-sweet-potatoes" },
+          { "name": "Creamed Onions", "slug": "moms-creamed-onions" },
+          { "name": "Green Beans" },
+          { "name": "Snow Salad", "slug": "snow-salad" },
+          { "name": "Dinner Rolls" }
+        ]
+      },
+      {
+        "title": "Dessert",
+        "items": [
+          { "name": "Pumpkin Pie" },
+          { "name": "Hot Apple Pie with Vanilla Ice Cream" },
+          { "name": "Baklava" }
+        ]
+      }
+    ]
+  }
+}

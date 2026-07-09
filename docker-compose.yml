@@ -1,0 +1,17 @@
+# Local development/testing compose. Production runs from the media-server
+# repo (compose/johnell-recipes/docker-compose.yml) behind Traefik at
+# https://recipes.tomjohnell.com with watchtower auto-updates.
+services:
+  johnell-recipes:
+    build: .
+    image: ghcr.io/tldev/johnell-recipes:local
+    container_name: johnell-recipes-local
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8080/healthz"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

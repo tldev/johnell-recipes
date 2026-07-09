@@ -1,0 +1,43 @@
+{
+  "title": "Yaya’s Tiropetes",
+  "subtitle": "Cheese Pies",
+  "attribution": "Yaya",
+  "section": "appetizers",
+  "image": "tiropetes",
+  "tagline": "Four cheeses folded into fillo triangles like little flags, brushed with butter, and baked golden on both sides.",
+  "ingredients": [
+    {
+      "heading": null,
+      "items": [
+        "2 lbs. feta cheese",
+        "15 oz. regular ricotta cheese",
+        "2 8-oz. pkgs. cream cheese",
+        "1½ cups grated Romano cheese",
+        "2 lbs. fillo dough pastry",
+        "6 tablespoons flour",
+        "6 eggs",
+        "2 lbs. butter"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "text": "Keep fillo dough frozen until the night before baking. Take fillo out of the freezer and put in the refrigerator overnight. One hour prior to folding cheese pies, place the boxes on the kitchen counter."
+    },
+    {
+      "text": "Beat the eggs until fluffy. Add the cream cheese until fluffy. Add the feta cheese and everything else. Blend thoroughly with electric mixer."
+    },
+    {
+      "text": "Melt butter slowly in a saucepan. Unfold fillo and cut stack in three even pieces lengthwise."
+    },
+    {
+      "text": "To fold individual pies, brush top layer of fillo in stack with plenty of melted butter. Place a heaping teaspoon of cheese filling in the bottom corner of the strip. Fold left to right forming an equilateral triangle. Brush generously with butter on the outside of the completed pie."
+    },
+    {
+      "text": "Bake pies at 350 degrees for approximately 30 minutes, turning them once to make them golden brown on both sides."
+    },
+    {
+      "text": "Pies may be frozen by layering and stacking them between sheets of waxed paper, making sure they do not come in contact with each other. Place in rectangular or square Tupperware containers for freezing."
+    }
+  ]
+}

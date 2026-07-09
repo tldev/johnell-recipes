@@ -1,0 +1,40 @@
+{
+  "title": "Dad’s Spaghetti",
+  "attribution": "Dad",
+  "section": "mains",
+  "image": "spaghetti",
+  "tagline": "A big pot of meat sauce — Italian tomatoes broken up by hand, seasoned by feel — over thin spaghetti.",
+  "ingredients": [
+    {
+      "heading": null,
+      "items": [
+        "2 large onions — finely chopped",
+        "2 lbs. lean ground sirloin",
+        "2 large cans of Italian tomatoes",
+        "2 small cans tomato paste",
+        "8 oz. water",
+        "Oregano",
+        "Garlic powder",
+        "Basil",
+        "Salt",
+        "Pepper",
+        "Olive oil",
+        "2 lbs. thin spaghetti noodles"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "text": "In a large saucepan, sauté onion in a little oil until limp. Add meat and brown well with a little salt & pepper."
+    },
+    {
+      "text": "Add tomatoes, tomato paste and water. Stir well, breaking up tomatoes into small pieces. Add garlic powder, oregano, basil, salt and pepper to taste."
+    },
+    {
+      "text": "Bring to a boil and reduce heat to a simmer. Let sauce simmer covered on low heat for 30 minutes to 1 hour."
+    },
+    {
+      "text": "Serve over noodles prepared according to package directions. Don’t forget to salt the noodle water, and be sure to drain noodles of all water!"
+    }
+  ]
+}

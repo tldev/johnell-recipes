@@ -1,0 +1,31 @@
+{
+  "title": "Homemade Cranberry Sauce",
+  "attribution": "Mom",
+  "section": "thanksgiving",
+  "image": "cranberry",
+  "tagline": "Fresh cranberries and sugar, ten minutes at a boil, then chilled overnight — better if you make it a day ahead.",
+  "ingredients": [
+    {
+      "heading": null,
+      "items": [
+        "1 package fresh cranberries",
+        "1 cup of granulated sugar"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "text": "Rinse cranberries in a colander and discard any bruised or spoiled berries."
+    },
+    {
+      "text": "In a medium saucepan, bring 1 cup of water to a boil. Add the sugar and stir until dissolved."
+    },
+    {
+      "text": "Add the cranberries and boil for about 10 minutes. Take off heat and let sit covered for about 30 minutes."
+    },
+    {
+      "text": "Transfer into a serving bowl, cover, and refrigerate for at least 4 hours. The sauce tastes great if made one day ahead!"
+    }
+  ],
+  "signoff": "Enjoy!"
+}

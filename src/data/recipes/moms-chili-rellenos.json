@@ -1,0 +1,58 @@
+{
+  "title": "Mom’s Chili Relleños",
+  "attribution": "Mom",
+  "section": "mains",
+  "image": "rellenos",
+  "tagline": "Whole roasted chilies stuffed with Monterey Jack, wrapped in cloud-light egg batter, fried, and finished in simmering tomato sauce.",
+  "yield": "Makes 6 servings (so Mom always doubled it for lots of leftovers)",
+  "ingredients": [
+    {
+      "heading": null,
+      "items": [
+        "2 4-oz. cans of roasted whole chili peppers",
+        "½ lb. Monterey Jack cheese",
+        "4 eggs, separated",
+        "1 tablespoon flour",
+        "½ teaspoon salt",
+        "Peanut oil for frying peppers"
+      ]
+    },
+    {
+      "heading": "Sauce",
+      "items": [
+        "1 large onion — chopped",
+        "1–2 cloves of garlic — minced",
+        "1 tablespoon extra virgin olive oil",
+        "1 large can of crushed tomatoes",
+        "2 beef bouillon cubes",
+        "1½ cups water",
+        "1 teaspoon salt",
+        "½ teaspoon freshly ground pepper",
+        "1 teaspoon dried oregano"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "text": "Rinse peppers and gently remove all seeds (they’re hot!). Keep each pepper intact and drain on paper towels."
+    },
+    {
+      "heading": "The sauce",
+      "text": "Meanwhile, in a large pot with a thick bottom, sauté onion and garlic in olive oil. Add crushed tomato, bouillon cubes, and remainder of sauce ingredients. Bring to a boil but do not boil. Lower heat and simmer for 30 minutes or longer."
+    },
+    {
+      "heading": "The peppers",
+      "text": "Cut cheese into strips and place neatly inside each of the rinsed chili peppers. Close peppers so cheese is inside."
+    },
+    {
+      "text": "Beat egg whites until stiff but not too dry. In a separate bowl, beat egg yolks. Pour beaten whites on top of beaten yolks. Sprinkle flour and salt over all and fold together gently until blended (do not stir)."
+    },
+    {
+      "text": "Pour peanut oil in a heavy skillet about ¼ inch deep. Heat until hot — almost smoking. Spoon in 1–2 tablespoons of the egg batter and spread until it is a little longer and wider than the stuffed chili peppers. Lay stuffed chilies on top of batter and cover with more batter to enclose. Fry until brown and turn gently to brown other side."
+    },
+    {
+      "text": "Place fried pepper in hot tomato sauce and simmer on a very low flame until ready to serve. Chilies will stay intact if not stirred or disturbed too much. Check the bottom of the pot occasionally to make sure sauce is not sticking — or it will burn and impart an unpleasant flavor to the dish!"
+    }
+  ],
+  "signoff": "Love, Mom XOXO"
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Mom’s Creamed Onions",
+  "attribution": "Mom",
+  "section": "thanksgiving",
+  "image": "onions",
+  "tagline": "Little white onions in a nutmeg cream sauce with a few drops of Tabasco — the dish that disappeared first.",
+  "yield": "Serves 8",
+  "ingredients": [
+    {
+      "heading": null,
+      "items": [
+        "2 lbs. small white onions, or drained canned, boiled onions (Mrs. White’s Onions — glass jars — are the best)",
+        "¼ cup butter (1 stick)",
+        "¼ cup flour",
+        "2 cups heavy cream",
+        "Pinch each of nutmeg and salt",
+        "Several drops Tabasco"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "text": "To peel fresh onions, cut a slice off one end; place onions in a pot with water to cover. Bring to a boil; remove from heat and cool slightly. Skins should slip off easily."
+    },
+    {
+      "text": "Place back in water; simmer until tender; drain well."
+    },
+    {
+      "text": "Meanwhile in a heavy saucepan melt butter. Gradually stir in flour until smooth. Cook over low heat, stirring constantly, 5 minutes, and set aside."
+    },
+    {
+      "text": "In a small saucepan, scald cream. Gradually whisk or stir into butter mixture; add seasonings; stir until thick and smooth."
+    },
+    {
+      "text": "Add onions, heat through. Serve."
+    }
+  ]
+}

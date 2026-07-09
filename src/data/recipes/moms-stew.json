@@ -1,0 +1,49 @@
+{
+  "title": "Mom’s Stew",
+  "attribution": "Mom",
+  "section": "mains",
+  "image": "stew",
+  "tagline": "Paprika-crusted beef browned in olive oil, then simmered for hours with carrots, celery, onions, and potatoes until the sauce begs for bread.",
+  "ingredients": [
+    {
+      "heading": null,
+      "items": [
+        "2 lbs. lean stew meat",
+        "1 cup flour",
+        "3 or 4 tablespoons Hungarian paprika",
+        "3 large carrots, peeled and sliced into 1-inch pieces",
+        "3 celery stalks, sliced into 1-inch pieces",
+        "3 medium yellow onions, cut in quarters",
+        "1 small can of tomato paste",
+        "4 medium potatoes — peeled and cut into large chunks"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "text": "Wash meat in cold water, cut off visible fat and set aside. In a large bowl mix the flour and paprika together, and dredge the meat in the mixture several pieces at a time, making sure to coat the meat very well (the flour should cake on thickly). Discard the flour after reserving about ¼ cup for use later."
+    },
+    {
+      "text": "Place the coated pieces on a platter. Generously drizzle meat with salt and pepper on all sides. Meanwhile, cover the bottom of the Dutch oven with about ¼ inch of extra virgin olive oil and heat until a piece of meat placed in the fat sizzles vigorously on contact."
+    },
+    {
+      "text": "Brown the stew meat on all sides, adding and removing pieces as the meat turns golden brown. Add more oil if necessary. Place browned meat on a clean platter."
+    },
+    {
+      "text": "When all the meat is browned, temporarily remove the pan from the heat and slowly add a little water in order to soften and scrape the caramelized residual off the bottom. Place back on medium heat and add a little bit of flour and a little more water, alternating, until the liquid starts to thicken slightly. Bring this mixture to a boil, but don’t boil!"
+    },
+    {
+      "text": "Place all of the meat back into the pot, and slowly add about a quart of water. (Add enough water to cover the meat by about 3 inches.) Add the tomato paste and blend well, being careful not to dislodge the flour coating off of the meat. Heat on medium high until the stew begins to boil."
+    },
+    {
+      "text": "Add the remaining vegetables and gently stir. At this point, there should be enough water in the pan to barely cover the vegetables. (As the vegetables cook they add fluid to the sauce.) Bring the mixture back to a boil and gently boil for a few more minutes."
+    },
+    {
+      "text": "Lower the heat and simmer on low heat, covered, until the meat is tender and the vegetables are soft — at least 2 hours. Stir occasionally while cooking. Check to see if more salt is needed for the sauce while it’s cooking. A little garlic powder is always nice too."
+    },
+    {
+      "text": "Serve in large bowls with warm, crusty bread for sopping up the delicious sauce!"
+    }
+  ],
+  "signoff": "Love, Mom XOXO"
+}

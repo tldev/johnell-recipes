@@ -1,0 +1,57 @@
+{
+  "title": "Yaya’s Pastitsio",
+  "attribution": "Yaya",
+  "section": "mains",
+  "image": "pastitsio",
+  "tagline": "Ziti and cinnamon-less Greek meat sauce under a deep blanket of la crema, baked until golden and cut into proud squares.",
+  "intro": "Pastitsio (Greek: παστίτσιο, IPA: [paˈsti.tsi.o]) is a Greek baked pasta dish.",
+  "ingredients": [
+    {
+      "heading": "Meat & noodles",
+      "items": [
+        "2 lbs. lean ground sirloin",
+        "½ lb. butter (2 sticks)",
+        "2 large grated sweet onions",
+        "¼ teaspoon ground black pepper",
+        "Salt “to taste”",
+        "2 tablespoons tomato paste",
+        "1 cup red wine (optional)",
+        "2 lbs. large ziti macaroni",
+        "3 cups of freshly, finely grated Romano cheese"
+      ]
+    },
+    {
+      "heading": "Cream sauce (“la crema”)",
+      "items": [
+        "1½ sticks of butter, melted",
+        "1 quart of whole milk",
+        "4 tablespoons of flour",
+        "8–10 eggs (depending on size), beaten"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "text": "In a large saucepan, sauté onion in one stick of butter until limp. Add meat and brown. Add wine, pepper and salt to taste. Add tomato paste and mix. Simmer until moisture is absorbed (about 30 minutes with wine; 10–15 minutes without wine added)."
+    },
+    {
+      "text": "Cook ziti in salted boiling water for 5 minutes; meanwhile melt 1 stick of butter. Place cooked ziti in colander, rinse in cold water and drain. Add 1 stick of melted butter, and mix with ziti to prevent sticking."
+    },
+    {
+      "text": "Wipe a large rectangular baking pan or dish with butter. Lightly sprinkle with flour. Mix the ziti and the meat together, then add the Romano cheese and toss together. Spread evenly into the greased baking pan."
+    },
+    {
+      "heading": "For the crema",
+      "text": "Melt 1½ sticks of butter in a saucepan. Add the 4 tablespoons of flour and make a paste. Add the milk slowly until the sauce is creamy — continuously stirring on low to medium heat."
+    },
+    {
+      "text": "Take the cream off the heat and let it cool for about 10 minutes (until lukewarm, to prevent eggs from curdling). Add the beaten eggs."
+    },
+    {
+      "text": "Pour the crema over the noodles and meat mixture in the baking pan. Gently fold the mixture with a large serving spoon as you add the liquid. Tilt the pan in different directions to “fill up” the holes in the large noodles."
+    },
+    {
+      "text": "Bake at 375 degrees on the bottom rack for 45–60 minutes, or until the top is golden brown and firm with a knife. Let stand for 30 minutes before cutting into squares."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "title": "Yaya’s Chestnut Stuffing",
+  "attribution": "Yaya",
+  "section": "thanksgiving",
+  "image": "chestnut",
+  "tagline": "Chestnuts, pine nuts, white raisins, and cinnamon folded into rice and sirloin — made the day before, always.",
+  "ingredients": [
+    {
+      "heading": null,
+      "items": [
+        "2–3 pounds chestnuts",
+        "½ jar pine nuts",
+        "2 14-oz. cans chicken broth",
+        "2 cups Uncle Ben’s long grain white rice",
+        "2 sweet onions — grated",
+        "2 pounds chopped sirloin",
+        "1 cup white raisins",
+        "1 teaspoon cinnamon",
+        "1½ sticks of butter",
+        "Olive oil",
+        "Salt & pepper to taste"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "text": "Make recipe the day before Thanksgiving."
+    },
+    {
+      "text": "Cut each chestnut in a cross and boil for a few minutes; peel them."
+    },
+    {
+      "text": "Bring chicken broth to a boil. Add rice, cover and simmer for 30 minutes."
+    },
+    {
+      "text": "In a large pot, sauté onion in several tablespoons of olive oil and ½ stick of butter until limp and clear. Add the chopped sirloin and brown with the onion. Add salt and pepper to taste."
+    },
+    {
+      "text": "Add chestnuts, pine nuts, and raisins. If too dry, add more chicken broth to make it moist. Simmer on very low heat for 1 hour."
+    },
+    {
+      "text": "Place in a deep casserole dish with cover and put in the refrigerator."
+    },
+    {
+      "text": "Next day, heat in the oven at 250 degrees until hot in the center. Put one ladle of turkey broth from the turkey gravy stock on top of the stuffing."
+    }
+  ],
+  "signoff": "Enjoy!"
+}

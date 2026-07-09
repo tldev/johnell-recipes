@@ -1,0 +1,33 @@
+{
+  "title": "Mom’s Bread Stuffing",
+  "attribution": "Mom",
+  "section": "thanksgiving",
+  "image": "stuffing",
+  "tagline": "Pepperidge Farm cubes soaked in good chicken stock with celery and onion — and famously, NO butter.",
+  "ingredients": [
+    {
+      "heading": null,
+      "items": [
+        "2 packages of Pepperidge Farm cubed Country Style stuffing (with white and wheat bread cubes)",
+        "2½ 32-oz. containers of Wolfgang Puck’s all natural, free-range chicken stock (total of 80 oz.)",
+        "3–4 stalks of celery — chopped",
+        "1 medium Spanish onion — chopped",
+        "NO butter… it isn’t needed!"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "text": "Clean and chop celery and onion."
+    },
+    {
+      "text": "Bring chicken stock to a boil in a large pot and turn off heat. Add both packages of stuffing, celery and onion and gently toss together until stuffing is saturated."
+    },
+    {
+      "text": "Place about 4–5 cups of finished stuffing in a separate container to stuff the turkey with. Place the remainder in a large, covered casserole dish and refrigerate for reheating later (after the turkey is done)."
+    },
+    {
+      "text": "An hour before the turkey comes out of the oven, place the stuffing on the counter. When there is room in the oven, bake the stuffing at 350 degrees for about 45 minutes to an hour (depending on how many other dishes are reheating in the oven). Stuffing is ready when hot in the center."
+    }
+  ]
+}
