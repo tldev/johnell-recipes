@@ -93,7 +93,7 @@ test('sitemap covers all pages', () => {
   }
 });
 
-test('home page links every recipe and both lost recipes', () => {
+test('home page links every recipe and every lost recipe', () => {
   const html = read('index.html');
   for (const r of ordered) assert.ok(html.includes(`href="/recipes/${r.slug}/"`), `home missing ${r.slug}`);
   for (const section of site.sections) {
