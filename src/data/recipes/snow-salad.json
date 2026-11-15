@@ -3,7 +3,8 @@
   "attribution": "Grandmother Joan Temple",
   "section": "thanksgiving",
   "image": "snow-salad",
-  "tagline": "Cream cheese, fruit cocktail, pecans, and whipped cream set in a gelatin mold overnight — unmolded with a dip in hot water.",
+  "card": "snow-salad--card",
+  "tagline": "A molded salad of cream cheese, fruit cocktail, pecans, and whipped cream.",
   "ingredients": [
     {
       "heading": null,

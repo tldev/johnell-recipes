@@ -1,0 +1,34 @@
+{
+  "title": "Yorkshire Pudding",
+  "attribution": "Grandmother Joan Temple",
+  "section": "mains",
+  "image": "yorkshire-pudding",
+  "card": "yorkshire-pudding--card",
+  "tagline": "A lumpy flour, egg, and milk batter baked in buttered muffin tins. Made to go with the prime rib.",
+  "ingredients": [
+    {
+      "heading": null,
+      "items": [
+        "1 cup sifted flour",
+        "½ teaspoon salt",
+        "2 eggs",
+        "1 cup milk",
+        "Butter, for the muffin tins"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "text": "Sift 1 cup sifted flour with ½ teaspoon salt into a bowl."
+    },
+    {
+      "text": "Break in 2 eggs and 1 cup milk. Mix ingredients together just enough to moisten them. There should be lumps in the batter."
+    },
+    {
+      "text": "Pour into well-buttered fluted muffin tins, filling ⅔ full, and put in a cold oven."
+    },
+    {
+      "text": "Turn on to 400° and bake 30 to 40 minutes."
+    }
+  ]
+}

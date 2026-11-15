@@ -1,0 +1,39 @@
+{
+  "title": "Roast Prime Rib",
+  "attribution": "Grandmother Joan Temple",
+  "section": "mains",
+  "image": "roast-prime-rib",
+  "card": "roast-prime-rib--card",
+  "tagline": "A standing rib roast seared hot, then roasted at 350° with frequent basting.",
+  "ingredients": [
+    {
+      "heading": null,
+      "items": [
+        "1 rib roast of beef, bone in, with a thick layer of fat",
+        "Salt",
+        "Butter or fat (or beef suet)",
+        "A few tablespoons of water, if the roast is large"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "text": "Rub a rib roast of beef with salt and spread it generously with butter or fat."
+    },
+    {
+      "text": "Put it on a rack in a roasting pan, resting on the bone ends. Needs a thick layer of fat (or beef suet)."
+    },
+    {
+      "text": "Sear in a very hot oven (450°) for about 20 minutes."
+    },
+    {
+      "text": "Reduce the heat to moderate (350°) and continue to roast, basting frequently, until done: 16 minutes per lb. for rare, 20 minutes per lb. for medium, 23 minutes per lb. for well done."
+    },
+    {
+      "text": "If large, add a few tablespoons of water to the pan to prevent the fat from burning."
+    },
+    {
+      "text": "Remove meat to a large platter and let stand 10 minutes."
+    }
+  ]
+}

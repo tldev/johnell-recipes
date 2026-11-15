@@ -3,14 +3,13 @@
   "tagline": "Seasoned with a Mother’s Love at Christmas",
   "originalDate": "December 25, 2007",
   "baseUrl": "https://recipes.tomjohnell.com",
-  "description": "The Johnell family cookbook — Yaya’s Greek classics, Mom and Dad’s dinner-table legends, and the full Thanksgiving spread — typed up with love in 2007 and kept warm ever since.",
-  "colophon": "From a book Mom made for us, Christmas 2007. Transcribed with love (and every XOXO kept intact).",
+  "description": "The recipes from the cookbook Mom made for the family, Christmas 2007: Yaya’s Greek dishes, Mom and Dad’s dinners, and Thanksgiving.",
+  "colophon": "From the cookbook Mom made for us, Christmas 2007.",
   "sections": [
     {
       "id": "appetizers",
       "title": "Appetizers",
-      "greek": "μεζέδες · mezethes",
-      "blurb": "The little dishes that started every holiday — folded, stuffed, and rolled by hand, usually with three generations crowded around the counter.",
+      "blurb": "Yaya’s fillo pies and grape leaves, and Papu’s celery sticks.",
       "recipes": [
         "yayas-yaplakia",
         "yayas-tiropetes",
@@ -27,8 +26,7 @@
     {
       "id": "mains",
       "title": "Main Courses",
-      "greek": "κυρίως πιάτα",
-      "blurb": "Sunday dinners and school-night favorites — half from Yaya’s Greece, half from Mom and Dad’s American kitchen, all of them served with warm bread.",
+      "blurb": "Yaya’s Greek dishes and Mom and Dad’s family dinners.",
       "recipes": [
         "yayas-pastitsio",
         "yayas-moussaka",
@@ -38,16 +36,18 @@
         "moms-chili-rellenos",
         "dads-super-secret-bbq-ribs",
         "dads-spaghetti",
+        "roast-prime-rib",
+        "yorkshire-pudding",
         "moms-twice-baked-potatoes",
-        "roast-leg-of-lamb"
+        "roast-leg-of-lamb",
+        "jordans-shrimp-boil"
       ],
       "lost": []
     },
     {
       "id": "thanksgiving",
       "title": "Thanksgiving at the Johnells’",
-      "greek": "η μεγάλη γιορτή",
-      "blurb": "The whole production — giblet gravy simmering all morning, two stuffings because one was never enough, and Grandmother Joan Temple’s snow salad setting in the fridge.",
+      "blurb": "Everything we make for Thanksgiving dinner.",
       "menuPage": true,
       "recipes": [
         "dads-giblet-gravy",
@@ -63,7 +63,7 @@
   ],
   "menu": {
     "title": "Thanksgiving Dinner at The Johnell’s",
-    "note": "The menu as Mom printed it in the book — every year, the whole thing.",
+    "note": "The menu as Mom printed it in the book.",
     "courses": [
       {
         "title": "Appetizers",

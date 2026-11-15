@@ -50,14 +50,34 @@ test('no extraction artifacts or template junk in recipe text', () => {
   }
 });
 
-test('photos.json entries are complete and free-use', () => {
-  const allowed = /public domain|cc0|cc[- ]by/i;
+test('photos.json entries are complete, with no attribution fields', () => {
   for (const [key, p] of Object.entries(photos)) {
-    for (const field of ['file', 'alt', 'title', 'pageUrl', 'artist', 'license', 'width', 'height']) {
+    for (const field of ['file', 'thumb', 'alt', 'width', 'height', 'thumbWidth', 'thumbHeight']) {
       assert.ok(p[field], `photo ${key}: missing ${field}`);
     }
-    assert.match(p.license, allowed, `photo ${key}: license "${p.license}" is not free-use`);
-    assert.ok(!/NC|ND/.test(p.license), `photo ${key}: non-commercial/no-derivs license`);
+    for (const field of ['artist', 'license', 'licenseUrl', 'pageUrl', 'title']) {
+      assert.ok(!(field in p), `photo ${key}: attribution field ${field} should be gone`);
+    }
+    assert.ok(p.width <= 2000 && p.thumbWidth <= 800, `photo ${key}: oversized image`);
+  }
+});
+
+test('every photo in photos.json is used', () => {
+  const used = new Set(['turkey']);
+  for (const r of Object.values(recipes)) {
+    used.add(r.image);
+    if (r.card) used.add(r.card);
+    for (const k of stepPhotoKeys(r, photos)) if (k) used.add(k);
+  }
+  for (const key of Object.keys(photos)) assert.ok(used.has(key), `photo ${key} is not used anywhere`);
+});
+
+test('step photo keys point at real steps of their recipe', () => {
+  for (const key of Object.keys(photos).filter((k) => k.includes('--step-'))) {
+    const [slug, n] = key.split('--step-');
+    assert.ok(recipes[slug], `${key}: unknown recipe ${slug}`);
+    assert.ok(Number(n) >= 1 && Number(n) <= recipes[slug].steps.length, `${key}: no such step`);
+    assert.ok(photos[key].caption, `${key}: step photo needs a caption`);
   }
 });
 
@@ -69,23 +89,12 @@ test('menu links point at real recipes', () => {
   }
 });
 
-test('step photo matching stays within bounds and only uses real photos', () => {
+test('step photo lookup is parallel to the steps', () => {
   for (const r of Object.values(recipes)) {
     const keys = stepPhotoKeys(r, photos);
     assert.equal(keys.length, r.steps.length);
-    const used = keys.filter(Boolean);
-    assert.ok(used.length <= 3, `${r.slug}: too many step photos`);
-    assert.equal(new Set(used).size, used.length, `${r.slug}: repeated step photo`);
-    for (const k of used) assert.ok(photos[k], `${r.slug}: step photo ${k} missing`);
+    for (const k of keys.filter(Boolean)) assert.ok(photos[k], `${r.slug}: step photo ${k} missing`);
   }
-});
-
-test('most recipes get at least one step photo', () => {
-  const withPhotos = Object.values(recipes).filter((r) => stepPhotoKeys(r, photos).some(Boolean));
-  assert.ok(
-    withPhotos.length >= Object.keys(recipes).length * 0.75,
-    `only ${withPhotos.length}/${Object.keys(recipes).length} recipes have step photos`
-  );
 });
 
 test('ordering helper covers every recipe once', () => {

@@ -1,0 +1,36 @@
+{
+  "title": "Jordan’s Shrimp Boil",
+  "attribution": "Jordan",
+  "section": "mains",
+  "image": "jordans-shrimp-boil",
+  "card": "jordans-shrimp-boil--card",
+  "tagline": "Potatoes, sausage, corn, and shrimp boiled in seasoned water and beer.",
+  "ingredients": [
+    {
+      "heading": null,
+      "items": [
+        "Water",
+        "Beer",
+        "Seasoning",
+        "Potatoes",
+        "Sausage",
+        "Corn",
+        "Shrimp"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "text": "Boil water, add beer & seasoning. Bring to boil."
+    },
+    {
+      "text": "Add potatoes & sausage. Cook for 10 mins."
+    },
+    {
+      "text": "Add corn. Cook 5 mins."
+    },
+    {
+      "text": "Add shrimp. Cook 3–4 mins."
+    }
+  ]
+}

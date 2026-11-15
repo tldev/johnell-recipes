@@ -21,7 +21,7 @@ const ordered = orderedRecipes(site, recipes);
 const read = (p) => readFileSync(join(DIST, p), 'utf8');
 
 test('core pages exist', () => {
-  for (const p of ['index.html', '404.html', 'sitemap.xml', 'robots.txt', 'thanksgiving/index.html', 'credits/index.html', 'favicon.svg']) {
+  for (const p of ['index.html', '404.html', 'sitemap.xml', 'robots.txt', 'thanksgiving/index.html', 'favicon.svg']) {
     assert.ok(existsSync(join(DIST, p)), `missing ${p}`);
   }
 });
@@ -39,7 +39,7 @@ test('every recipe has a directly-linkable page with anchors and metadata', () =
     assert.ok(html.includes(`id="step-${r.steps.length}"`), `${r.slug}: missing last step anchor`);
     assert.ok(html.includes('application/ld+json'), `${r.slug}: no JSON-LD`);
     assert.ok(html.includes('property="og:image"'), `${r.slug}: no og:image`);
-    assert.ok(html.includes('Photo:'), `${r.slug}: hero photo credit missing`);
+    assert.ok(!html.includes('Photo:'), `${r.slug}: photo credit line should be gone`);
   }
 });
 
@@ -111,5 +111,25 @@ test('json-ld parses and is a valid Recipe object', () => {
     assert.equal(ld['@type'], 'Recipe');
     assert.equal(ld.recipeInstructions.length, r.steps.length);
     assert.ok(ld.recipeIngredient.length > 0);
+  }
+});
+
+test('no photo attribution or credits page anywhere', () => {
+  assert.ok(!existsSync(join(DIST, 'credits')), 'credits page should not be built');
+  assert.ok(!read('sitemap.xml').includes('/credits/'), 'sitemap still lists /credits/');
+  const walk = (dir) =>
+    readdirSync(join(DIST, dir), { withFileTypes: true }).flatMap((e) =>
+      e.isDirectory() ? walk(join(dir, e.name)) : e.name.endsWith('.html') ? [join(dir, e.name)] : []
+    );
+  for (const file of walk('.')) {
+    const html = read(file);
+    assert.ok(!/credits|wikimedia|creativecommons/i.test(html), `${file}: still mentions photo credits`);
+  }
+});
+
+test('recipes with an original card show it on the page', () => {
+  for (const r of ordered.filter((x) => x.card)) {
+    const html = read(`recipes/${r.slug}/index.html`);
+    assert.ok(html.includes('class="recipe-card"'), `${r.slug}: original card missing`);
   }
 });

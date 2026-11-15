@@ -1,13 +1,6 @@
 // HTML templates. Every dynamic value goes through esc(); photo metadata
-// comes from src/data/photos.json and is rendered with visible credit links.
-import { esc, stepPhotoKeys, PROCESS_CAPTIONS } from './lib.mjs';
-
-function photoCredit(photo, cls = 'photo-credit') {
-  const license = photo.licenseUrl
-    ? `<a href="${esc(photo.licenseUrl)}" rel="license noopener">${esc(photo.license)}</a>`
-    : esc(photo.license);
-  return `<span class="${cls}">Photo: <a href="${esc(photo.pageUrl)}" rel="noopener">${esc(photo.artist)}</a> · ${license}</span>`;
-}
+// (file, size, alt text, step captions) comes from src/data/photos.json.
+import { esc, stepPhotoKeys } from './lib.mjs';
 
 function img(photo, { cls = '', sizes = '100vw', loading = 'lazy', useThumb = false } = {}) {
   const src = useThumb && photo.thumb ? `/img/${photo.thumb}` : `/img/${photo.file}`;
@@ -63,7 +56,6 @@ ${content}
 </main>
 <footer class="site-foot">
   <p class="colophon">${esc(site.colophon)}</p>
-  <p class="foot-links"><a href="/">All recipes</a> · <a href="/thanksgiving/">Thanksgiving menu</a> · <a href="/credits/">Photo credits</a></p>
 </footer>
 <script src="/assets/${assets.js}" defer></script>
 </body>
@@ -72,7 +64,6 @@ ${content}
 }
 
 export function homePage({ site, recipes, photos, assets }) {
-  const hero = photos.home;
   const sections = site.sections
     .map((section) => {
       const cards = section.recipes
@@ -96,21 +87,19 @@ export function homePage({ site, recipes, photos, assets }) {
   <span class="card-body">
     <span class="card-title">${esc(l.title)}</span>
     <span class="card-tagline">${esc(l.note)}</span>
-    <span class="card-attr">A lost page</span>
   </span>
 </div>`
         )
         .join('\n');
       const menuLink = section.menuPage
-        ? `<p class="section-extra"><a class="menu-link" href="/thanksgiving/">See the full Thanksgiving menu, as Mom printed it →</a></p>`
+        ? `<p class="section-extra"><a href="/thanksgiving/">The Thanksgiving menu, as Mom printed it</a></p>`
         : '';
       return `<section class="recipe-section" id="${esc(section.id)}" aria-label="${esc(section.title)}">
   <header class="section-head">
     <h2>${esc(section.title)}</h2>
-    <p class="section-greek">${esc(section.greek)}</p>
     <p class="section-blurb">${esc(section.blurb)}</p>
+    ${menuLink}
   </header>
-  ${menuLink}
   <div class="cards">
 ${cards}
 ${lost}
@@ -119,20 +108,12 @@ ${lost}
     })
     .join('\n');
 
-  const content = `<div class="hero">
-  ${img(hero, { cls: 'hero-img', loading: 'eager', sizes: '100vw' })}
-  <div class="hero-text">
-    <p class="hero-kicker">The Johnell Family</p>
-    <h1>Recipes</h1>
-    <p class="hero-tagline">${esc(site.tagline)}</p>
-    <p class="hero-date">${esc(site.originalDate)}</p>
-  </div>
-  ${photoCredit(hero, 'photo-credit hero-credit')}
-</div>
-<div class="home-intro">
-  <p>${esc(site.description)}</p>
-  <p class="filter-wrap"><label class="visually-hidden" for="filter">Find a recipe</label><input id="filter" type="search" placeholder="Find a recipe… (try “yaya” or “potatoes”)" autocomplete="off"></p>
-</div>
+  const content = `<header class="home-head">
+  <h1>${esc(site.title)}</h1>
+  <p class="home-book">${esc(site.tagline)}<br>${esc(site.originalDate)}</p>
+  <p class="home-desc">${esc(site.description)}</p>
+  <p class="filter-wrap"><label class="visually-hidden" for="filter">Find a recipe</label><input id="filter" type="search" placeholder="Find a recipe" autocomplete="off"></p>
+</header>
 ${sections}`;
 
   return page({
@@ -143,12 +124,13 @@ ${sections}`;
     path: '/',
     bodyClass: 'page-home',
     content,
-    ogImage: hero.file,
+    ogImage: photos[recipes[site.sections[0].recipes[0]].image].file,
   });
 }
 
 export function recipePage({ site, recipes, ordered, recipe, photos, assets }) {
   const photo = photos[recipe.image];
+  const card = recipe.card ? photos[recipe.card] : null;
   const section = site.sections.find((s) => s.id === recipe.section);
   const idx = ordered.findIndex((r) => r.slug === recipe.slug);
   const prev = ordered[(idx - 1 + ordered.length) % ordered.length];
@@ -175,14 +157,14 @@ export function recipePage({ site, recipes, ordered, recipe, photos, assets }) {
       const figure = key
         ? `<figure class="step-photo">
   ${img(photos[key], { sizes: '(min-width: 900px) 640px, 100vw' })}
-  <figcaption>${esc(PROCESS_CAPTIONS[key] || '')} ${photoCredit(photos[key])}</figcaption>
+  ${photos[key].caption ? `<figcaption>${esc(photos[key].caption)}</figcaption>` : ''}
 </figure>`
         : '';
       return `${heading}
 <li class="step" id="${id}">
   <div class="step-body">
     <p>${esc(step.text)}</p>
-    <a class="step-anchor" href="#${id}" title="Link to this step" aria-label="Link to step ${stepNo}">§</a>
+    <a class="step-anchor" href="#${id}" title="Link to this step" aria-label="Link to step ${stepNo}">#</a>
   </div>
   ${figure}
 </li>`;
@@ -201,7 +183,6 @@ export function recipePage({ site, recipes, ordered, recipe, photos, assets }) {
   const content = `<article class="recipe" data-slug="${esc(recipe.slug)}">
 <div class="recipe-hero">
   ${img(photo, { cls: 'recipe-hero-img', loading: 'eager', sizes: '(min-width: 1100px) 1040px, 100vw' })}
-  ${photoCredit(photo, 'photo-credit hero-credit')}
 </div>
 <header class="recipe-head">
   <p class="kicker"><a href="/#${esc(section.id)}">${esc(section.title)}</a></p>
@@ -227,7 +208,11 @@ ${steps}
     </ol>
     ${notes}
     ${recipe.signoff ? `<p class="signoff">${esc(recipe.signoff)}</p>` : ''}
-    ${recipe.editorsNote ? `<aside class="editors-note"><h3>A note from the transcription</h3><p>${esc(recipe.editorsNote)}</p></aside>` : ''}
+    ${card ? `<figure class="recipe-card">
+      <a href="/img/${esc(card.file)}">${img(card, { useThumb: false, sizes: '(min-width: 900px) 640px, 100vw' })}</a>
+      <figcaption>${esc(card.caption || 'The original recipe card.')}</figcaption>
+    </figure>` : ''}
+    ${recipe.editorsNote ? `<aside class="editors-note"><h3>Transcription note</h3><p>${esc(recipe.editorsNote)}</p></aside>` : ''}
   </div>
 </div>
 <nav class="recipe-nav" aria-label="More recipes">
@@ -287,27 +272,25 @@ ${items}
   </ul>
 </section>`;
     })
-    .join('\n<p class="menu-flourish" aria-hidden="true">❦</p>\n');
+    .join('\n');
 
   const content = `<div class="recipe-hero menu-hero">
   ${img(hero, { cls: 'recipe-hero-img', loading: 'eager', sizes: '(min-width: 1100px) 1040px, 100vw' })}
-  ${photoCredit(hero, 'photo-credit hero-credit')}
 </div>
 <article class="menu-card">
   <header class="menu-head">
-    <p class="kicker">Every year, the whole thing</p>
     <h1>Thanksgiving Dinner<br>at The Johnell’s</h1>
     <p class="menu-note">${esc(site.menu.note)}</p>
   </header>
 ${courses}
-  <p class="menu-foot">Recipes in <a href="/#thanksgiving">the Thanksgiving chapter</a> are underlined — the rest you already know by heart.</p>
+  <p class="menu-foot">Dishes with a recipe in the book are linked. The rest are in <a href="/#thanksgiving">the Thanksgiving section</a> or you already know them.</p>
 </article>`;
 
   return page({
     site,
     assets,
     title: 'Thanksgiving Menu',
-    description: 'Thanksgiving dinner at the Johnells’ — the full menu from the 2007 family cookbook, from yaplakia to baklava.',
+    description: 'Thanksgiving dinner at the Johnells’: the menu from the 2007 family cookbook.',
     path: '/thanksgiving/',
     bodyClass: 'page-menu',
     content,
@@ -315,48 +298,10 @@ ${courses}
   });
 }
 
-export function creditsPage({ site, photos, assets }) {
-  const rows = Object.entries(photos)
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([key, p]) => {
-      const license = p.licenseUrl
-        ? `<a href="${esc(p.licenseUrl)}" rel="license noopener">${esc(p.license)}</a>`
-        : esc(p.license);
-      return `<li class="credit">
-  <img src="/img/${esc(p.thumb || p.file)}" alt="${esc(p.alt)}" loading="lazy" decoding="async">
-  <span class="credit-text"><a href="${esc(p.pageUrl)}" rel="noopener">${esc(p.title.replace(/^File:/, ''))}</a><br>
-  by ${esc(p.artist)} · ${license}</span>
-</li>`;
-    })
-    .join('\n');
-
-  const content = `<article class="credits">
-  <header class="recipe-head">
-    <p class="kicker">Thank you</p>
-    <h1>Photo Credits</h1>
-    <p class="recipe-intro">The recipes are ours; the photographs are borrowed from generous strangers. Every image on this site is free-use — public domain or Creative Commons — from Wikimedia Commons. Click through for the originals.</p>
-  </header>
-  <ul class="credit-list">
-${rows}
-  </ul>
-</article>`;
-
-  return page({
-    site,
-    assets,
-    title: 'Photo Credits',
-    description: 'Attribution for the free-use photographs used across the Johnell Family Recipes site.',
-    path: '/credits/',
-    bodyClass: 'page-credits',
-    content,
-  });
-}
-
 export function notFoundPage({ site, assets }) {
   const content = `<article class="notfound">
-  <p class="kicker">404</p>
-  <h1>That page boiled away</h1>
-  <p class="recipe-intro">Whatever was here, it isn’t anymore — like the lost Shrimp Fondue of page 1.6. Head back to <a href="/">the table of contents</a>.</p>
+  <h1>Page not found</h1>
+  <p>There’s nothing at this address. <a href="/">Back to all recipes</a>.</p>
 </article>`;
   return page({
     site,
